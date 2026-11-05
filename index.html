@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تنظيف نصوص ChatGPT للعربية — حذف النجوم ** وتنسيق واتساب | نَصّ نظيف</title>
+<meta name="description" content="أداة مجانية لحذف رموز ** و # من نصوص ChatGPT وتحويلها لنص نظيف لواتساب ووورد مع تصحيح الترقيم العربي.">
+<link rel="canonical" href="https://nidalzomlot-cmd.github.io/nass-nadeef/index.html">
+<link rel="stylesheet" href="style.css">
+<!-- AdSense: ضع كود التحقق هنا بعد التسجيل
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXX" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="index.html">نَصّ نظيف</a>
+<nav><a href="index.html">الأداة</a><a href="articles/index.html">مقالات</a><a href="about.html">من نحن</a><a href="contact.html">تواصل</a></nav></header>
+<h1>تنظيف نصوص ChatGPT للعربية</h1>
+<p class="lead">الصق النص المنسوخ من ChatGPT أو Claude أو Gemini، واحصل على نص نظيف بدون نجوم ** وعلامات #، جاهز لواتساب أو وورد أو فيسبوك — مع تصحيح الترقيم العربي.</p>
+<div id="controls">
+<fieldset aria-label="نوع الناتج">
+<label><input type="radio" name="mode" value="plain" checked> نص عادي (وورد/فيسبوك)</label>
+<label><input type="radio" name="mode" value="whatsapp"> تنسيق واتساب</label>
+<label><input type="radio" name="mode" value="keep"> اترك التنسيق</label>
+</fieldset>
+<label><input type="checkbox" id="o-punct" checked> ترقيم عربي (، ؟ ؛)</label>
+<label><input type="checkbox" id="o-blank" checked> حذف الأسطر الفارغة الزائدة</label>
+<label><input type="checkbox" id="o-bidi" checked> حذف رموز الاتجاه المخفية</label>
+<label><input type="checkbox" id="o-tashkeel"> حذف التشكيل</label>
+<label><input type="checkbox" id="o-tatweel"> حذف التطويل ـ</label>
+<label><input type="checkbox" id="o-emoji"> حذف الإيموجي</label>
+<label>الأرقام: <select id="o-digits"><option value="">كما هي</option><option value="east">١٢٣</option><option value="west">123</option></select></label>
+</div>
+<div class="grid">
+<div><label class="t" for="input">النص الأصلي</label><textarea id="input" placeholder="الصق النص هنا..."></textarea>
+<div class="bar"><button id="sample">جرّب مثالاً</button><button id="clear">مسح</button></div></div>
+<div><label class="t" for="output">النص النظيف</label><textarea id="output" readonly></textarea>
+<div class="bar"><button class="primary" id="copy">نسخ النتيجة</button><span id="stats"></span></div></div>
+</div>
+<div class="ad"><!-- مكان إعلان --></div>
+<section class="info">
+<h2>لماذا تظهر النجوم ** عند النسخ من ChatGPT؟</h2>
+<p>نماذج الذكاء الاصطناعي تكتب بصيغة اسمها <strong>Markdown</strong>: النجمتان تعنيان خطاً عريضاً، و# تعني عنواناً. داخل موقع ChatGPT تظهر بشكل جميل، لكن عند لصقها في واتساب أو وورد أو منشور فيسبوك تظهر الرموز كما هي. هذه الأداة تحذفها أو تحوّلها لتنسيق واتساب الصحيح.</p>
+<h2>ماذا تصلح الأداة؟</h2>
+<ul>
+<li>حذف <code>**</code> و<code>#</code> و<code>---</code> وتحويل الجداول إلى أسطر مقروءة.</li>
+<li>تحويل العريض إلى صيغة واتساب <code>*نص*</code> والمائل إلى <code>_نص_</code>.</li>
+<li>تحويل الفاصلة وعلامة الاستفهام الإنجليزية (, ?) إلى العربية (، ؟) بجانب الكلمات العربية فقط.</li>
+<li>تبديل الأرقام بين 123 و١٢٣، وحذف التشكيل والتطويل والإيموجي عند الحاجة.</li>
+</ul>
+<h2>هل نصوصي آمنة؟</h2>
+<p>نعم. المعالجة كلها تتم داخل متصفحك، ولا يُرسل النص إلى أي خادم.</p>
+</section>
+<script src="app.js"></script>
+<footer>© 2026 نَصّ نظيف · أداة مجانية تعمل داخل متصفحك ولا ترسل نصوصك لأي خادم · <a href="privacy.html">سياسة الخصوصية</a></footer>
+</div>
+</body>
+</html>
